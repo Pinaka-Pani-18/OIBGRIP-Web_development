@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: #d6ffde;
+  min-height: 100vh;
+  border: 1rem solid;
+  border-color: rgb(0, 0, 0);
+}
+.content {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.top_section {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.top_section h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.top_section h4 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: end;
+}
+
+.image_container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image_container,
+img {
+  width: 30rem;
+  height: 32rem;
+}
+
+.about_section {
+  margin-top: 5rem;
+}
+
+.about_section h2 {
+  font-size: 7rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.about_section p {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.15rem;
+  text-align: justify;
+}
+
+.awards_honours {
+  margin: 5rem 0;
+}
+
+.awards_honours h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.awards_honours ul {
+  margin-left: 5rem;
+}
+.awards_honours li {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.awards_honours ul li {
+  font-size: 1.6rem;
+}
+
+.first_ul {
+  list-style: none;
+}
+
+.awards_honours .first_ul > li::before {
+  content: "\00BB";
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.second_ul {
+  margin-top: 1rem;
+  list-style-type: disc;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+footer p {
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .top_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top_section .image_container {
+    margin-bottom: 2rem;
+  }
+
+  html {
+    font-size: 40%;
+  }
+}
